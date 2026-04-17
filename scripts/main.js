@@ -20,7 +20,7 @@ Events.on(ClientLoadEvent, () => {
             const button = new Button();
             const label = new Label("1.00");
 
-            button.add(new Image(Core.atlas.find("loading")));
+            button.add(new Image(Core.atlas.find("tc-loading")));
 
             slider.changed(() => {
                 speed = slider.getValue() + 1;
