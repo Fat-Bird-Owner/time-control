@@ -1,18 +1,18 @@
 // file name very used in logic like template-block.
 name: "tc"
 
-displayName: "Bootleg Time Control"
+displayName: "[accent[]]Bootleg Time Control[[]]"
 repo: "Fat-Bird-Owner/time-control"
 
 author: "Fat Bird's Owner"
 
 description: "
-Bootleg time control
+Bootleg [accent[]]time control[[]]
 "
 
 iosCompatible: true
 version: "v1"
-subtitle: "v1"
+subtitle: "[grey[]]v1[[]]"
 minGameVersion: "156"
 dependencies: []
 hidden: false
