@@ -18,9 +18,9 @@ Events.on(ClientLoadEvent, () => {
 
             const slider = new Slider(0, 10, 0.01, false);
             const button = new Button();
-            const label = new Label("1");
+            const label = new Label("1.00");
 
-            button.add(new Image(Core.atlas.find("router")));
+            button.add(new Image(Core.atlas.find("loading")));
 
             slider.changed(() => {
                 speed = slider.getValue() + 1;
