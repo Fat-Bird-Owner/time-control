@@ -16,7 +16,7 @@ Events.on(ClientLoadEvent, () => {
 
         tab.table(Tex.pane, t => {
 
-            const slider = new Slider(0, 10, 0.01, false);
+            const slider = new Slider(0, 9, 0.5, false);
             const button = new Button();
             const label = new Label("1.00");
 
