@@ -7,6 +7,8 @@ return "[green]"
 return "[accent]"
 } else if (val >= 6.5){
 return "[red]"
+} else {
+return ""
 }}
 
 Events.on(ClientLoadEvent, () => {
