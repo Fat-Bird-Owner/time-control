@@ -1,3 +1,14 @@
+function col(val){
+if (val >= 1.5){
+return "[sky]"
+} else if (val >= 2.5){
+return "[green]"
+} else if (val >= 3.5){
+return "[accent]"
+} else if (val >= 6.5){
+return "[red]"
+}}
+
 Events.on(ClientLoadEvent, () => {
     try{
 
@@ -24,13 +35,13 @@ Events.on(ClientLoadEvent, () => {
 
             slider.changed(() => {
                 speed = slider.getValue() + 1;
-                label.setText(speed.toFixed(2));
+                label.setText(col(speed) + speed.toFixed(2));
             });
 
             button.clicked(() => {
                 speed = 1;   
                 slider.setValue(0);
-                label.setText(speed.toFixed(2));
+                label.setText(col(speed) + speed.toFixed(2));
             });
 
             t.add(slider).width(150);
