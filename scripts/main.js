@@ -27,18 +27,12 @@ Events.on(ClientLoadEvent, () => {
             slider.changed(() => {
             speed = slider.getValue() + 1;
             label.setText(speed.toFixed(2));
-    
-            const t = (speed - 1) / 9;
-
-            const color = Tmp.c1.set(Color.white).lerp(Color.red, t);
-            label.setColor(color);
             });
 
             button.clicked(() => {
                 speed = 1;   
                 slider.setValue(0);
                 label.setText(speed.toFixed(2));
-                label.setColor(Color.white);
             });
 
             t.add(slider).width(150);
